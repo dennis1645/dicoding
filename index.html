@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Self By Dennis</title>
+    <!-- Css Boostrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <!-- Css FontAwesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <!-- Sweetalert -->
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <!-- Css saya -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+    <!-- Navbar -->
+    <div class="container-fluid navigasi">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center fw-bold p-2 text-white"><i class="fa-solid fa-book me-2"></i>Book Self By Dennis</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Form Input -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="kartu">
+                    <form id="add_book">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark me-2"></i>Judul Buku</label>
+                            <input type="text" class="form-control" id="judul_buku" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text"><i class="fa-solid fa-exclamation me-2"></i>Tuliskan Judul Buku yang di baca</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fw-bold"><i class="fa-solid fa-user-tie me-2"></i>Nama Penulis Buku</label>
+                            <input type="text" class="form-control" id="penulis_buku" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fw-bold"><i class="fa-solid fa-calendar-days me-2"></i>Tahun Terbit Buku</label>
+                            <input type="number" class="form-control" id="tahun_buku" required>
+                        </div>
+                        <button onclick="simpanBuku(event)" type="submit" class="btn btn-danger  "><i class="fa-solid fa-square-plus me-2"></i>Tambahkan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form Input End -->
+
+    <!-- Form Cari -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 form-cari">
+                <form class="d-flex align-items-center">
+                    <input type="text" class="form-control" id="search_buku" style="width: 440px;" placeholder="Masukan Judul Buku">
+                    <button class="btn btn-primary ms-2" onclick="cari(event)"><i class="fa-solid fa-magnifying-glass me-2"></i>Cari</button>
+                </form>
+                <div id="ha
+                sil" class="none">
+                    <h3 class="fw-bold text-center mt-3 mb-2 text-white">Hasil Pencarian</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Cari End -->
+    <!-- Hasil -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5  mt-3 me-2 rounded-3 ms-2 p-3 belum" id="rakBelumdibaca">
+                <h3 class="text-center fw-bold border-bottom pb-2 border-black"><i class="fa-regular fa-bookmark me-2"></i>Buku yang belum di baca</h3>
+
+                <!-- Card Buku -->
+                
+                <!-- Card Buku End -->
+            </div>
+            <div class="col-md-5 text-white mt-3 rounded-3 ms-3 me-3 p-3 selesai" id="rakSudahdibaca">
+                <h3 class="text-center fw-bold border-bottom pb-2"><i class="fa-solid fa-bookmark me-2"></i>Buku yang sudah di baca</h3>
+                <!-- Card Buku -->
+                
+                <!-- Card Buku End -->
+            </div>
+        </div>
+    </div>
+    <!-- Hasil End -->
+    <!-- Js -->
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

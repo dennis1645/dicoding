@@ -1,0 +1,17 @@
+{
+  "name": "dicoding",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.html",
+  "scripts": {
+    "test": "Halo"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Dennis",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.28"
+  }
+}

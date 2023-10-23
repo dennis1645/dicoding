@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.brand {
+  width: 150px;
+}
+body {
+  overflow-x: hidden;
+}
+.none {
+  display: none;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+/* Tampilan Android */
+@media screen and (min-width: 1024px) {
+  /* Tampilan Desktop */
+  .brand {
+    width: 150px;
+    margin-left: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .nav-link {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 20px;
+  }
+  .link {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .menu-toogle {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+  }
+  .judul {
+    margin-top: 170px;
+    font-size: xxx-large;
+    text-align: center;
+  }
+  .sub-judul {
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 10px;
+    margin-left: 400px;
+    background-color: #5b0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .judul-why {
+    margin-top: 10px;
+    text-align: center;
+    font-size: xxx-large;
+  }
+  .judul-about {
+    margin-top: 10px;
+    text-align: center;
+    font-size: xxx-large;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+    background-color: #482700;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .img-card {
+    width: 150px;
+    margin-left: 20px;
+  }
+  .sub-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+  }
+  .why {
+    border-bottom: 1px solid black;
+    padding: 30px;
+  }
+  .about {
+    display: flex;
+  }
+  .bagian {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+  .img-founder {
+    width: 500px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .why {
+    border-bottom: 1px solid black;
+    padding: 30px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .nav-link {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 75px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 50%;
+    right: 0px;
+    transition: all 1s;
+    background-color: white;
+  }
+  .link {
+    font-weight: bold;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+  }
+  .menu-toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .navbar ul.slide {
+    display: block;
+  }
+  .img-hero {
+    width: 250px;
+    margin-left: 40px;
+  }
+  .hero {
+    padding: 15px;
+    border-bottom: 1px solid black;
+  }
+  .judul {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sub-judul {
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: #5b0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .judul-why {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .judul-about {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    background-color: #482700;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .img-card {
+    width: 150px;
+    margin-left: 45px;
+  }
+  .sub-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    margin-top: 10px;
+  }
+  .img-about {
+    width: 150px;
+    margin-left: 100px;
+  }
+  .bagian {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+  .img-founder {
+    width: 200px;
+    margin-left: 80px;
+    border-radius: 20px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 668px) and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .nav-link {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 75px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 50%;
+    right: 0px;
+    transition: all 1s;
+    background-color: white;
+  }
+  .link {
+    font-weight: bold;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+  }
+  .menu-toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .navbar ul.slide {
+    display: block;
+  }
+  .img-hero {
+    width: 250px;
+    margin-left: 200px;
+  }
+  .hero {
+    padding: 15px;
+    border-bottom: 1px solid black;
+  }
+  .judul {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sub-judul {
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: #5b0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .judul-why {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .judul-about {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding: 20px;
+  }
+  .card {
+    background-color: #482700;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .img-card {
+    width: 150px;
+    margin-left: 50px;
+  }
+  .sub-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,65 @@
+.background {
+  background-color: #c3edc0;
+}
+.navigasi {
+  background-color: #85a389;
+}
+.kartu {
+  width: 500px;
+  background-color: #ffd6a5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.belum {
+  background-color: #d7c0ae;
+}
+.selesai {
+  background-color: #967e76;
+}
+.kartu-buku-belum {
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.kartu-buku-sudah {
+  background-color: rgb(6, 0, 61);
+  padding: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.form-cari {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #967e76;
+  padding: 10px;
+  border-radius: 10px;
+}
+.none {
+  display: none;
+}
+@media (max-width: 576px) {
+  .kartu {
+    width: 300px;
+    background-color: #ffd6a5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .belum {
+    background-color: #d7c0ae;
+  }
+  .selesai {
+    background-color: #967e76;
+  }
+}
